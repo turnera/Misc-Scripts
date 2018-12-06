@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <table class = "data">
+        <tr>
+            <th>Name</th>
+            <th>Symbol</th>
+            <th>Price</th>
+            <th>Shares</th>
+            <th>TOTAL</th>
+        </tr>
+
+        {% for i in lookupList %}
+        <tr>
+            <td>{{ i['name'] }}</td>
+            <td>{{ i['symbol'] }}</td>
+            <td>{{ i['price'] }}</td>
+            <td>{{ i['SUM(amount)']|int }}</td>
+            <td> {{ usd(i['price'] * i['SUM(amount)']|float) }}</td>
+        </tr>
+        {% endfor %}
+
+        <tr id = "cash">
+            <td>CASH</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                {{ cash }}
+            </td>
+        </tr>
+    </table>
+{% endblock %}

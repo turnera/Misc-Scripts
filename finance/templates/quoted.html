@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <form action="/quote" method="post">
+        <div class="form-group">
+            <p>
+                {{ stock.name }} ({{ stock.symbol }}) : {{ price }}
+            </p>
+        </div>
+    </form>
+{% endblock %}
