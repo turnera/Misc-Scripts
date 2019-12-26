@@ -16,4 +16,4 @@ Miscellaneous scripts taken from projects I've worked on for fun
 4. Mashup:
     A website that is a mashup that uses Google Maps API and Google News, to provide the local news of the 10 nearest cities from the user-     provided input.
     
-    Used Python, Flask,jinja2, HTML/CSS/JS, Google Maps API
+    Used Python, Flask, Jinja2, HTML/CSS/JS, Google Maps API
