@@ -1,5 +1,5 @@
-# Projects
-Miscellaneous projects I've worked on for fun
+# Misc. Scripts
+Miscellaneous scripts taken from projects I've worked on for fun
 
 1. Help Desk Simulation:
     These are the c# files taken from a help desk game I have been working on in my free time. 
